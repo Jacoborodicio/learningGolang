@@ -20,4 +20,21 @@ func main() {
   _, c, _ := basics.GetInfo(&bmw)
   fmt.Println(c)
   basics.PrintInfo(&bmw)
+
+  // Data Structures
+  m := &basics.MaxHeap{}
+  fmt.Println(m)
+  buildHeap := []int{ 10, 20, 30, 5, 7, 9, 11, 13, 15, 17}
+  // Notice how the insert re-arranges the nodes
+  for _, v := range buildHeap {
+    m.Insert(v)
+    fmt.Println(m)
+  }
+
+  basics.PrintMessage("---")
+
+  for i := 0; i < 5; i++ {
+    m.Extract()
+    fmt.Println(m)
+  }
 }

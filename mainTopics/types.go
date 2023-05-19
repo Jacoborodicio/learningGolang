@@ -19,5 +19,5 @@ func GetInfo (c *Car)  (int, string, int) {
 }
 
 func PrintInfo (c *Car) {
-  fmt.Printf("The colour %v with %d Wheels and %d PS", c.Colour, c.Wheels, c.Ps)
+  fmt.Printf("The colour %v with %d Wheels and %d PS\n", c.Colour, c.Wheels, c.Ps)
 }
