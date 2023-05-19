@@ -14,6 +14,6 @@ func PrintMessage (message string) {
   fmt.Println(message)
 }
 
-func GetInfo (c *Car)  (int, string, int) {
+func getInfo (c *Car)  (int, string, int) {
   return c.wheels, c.colour, c.ps
 }
