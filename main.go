@@ -2,6 +2,7 @@ package main
 
 import (
   basics "github.com/Jacoborodicio/learningGolang/mainTopics"
+  dataStructures "github.com/Jacoborodicio/learningGolang/dataStructures"
   "fmt"
   // "strconv"
 )
@@ -22,7 +23,7 @@ func main() {
   basics.PrintInfo(&bmw)
 
   // Data Structures
-  m := &basics.MaxHeap{}
+  m := &dataStructures.MaxHeap{}
   fmt.Println(m)
   buildHeap := []int{ 10, 20, 30, 5, 7, 9, 11, 13, 15, 17}
   // Notice how the insert re-arranges the nodes
